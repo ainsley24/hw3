@@ -8,7 +8,8 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new
-    @post["activity"] = params["post"]["activity"]
+    @post["title"] = params["post"]["title"]
+    @post["description"] = params["post"]["description"]
     @post["posted_on"] = params["post"]["posted_on"]
     @post.save
     redirect_to "/places/#{@post["place_id"]}"

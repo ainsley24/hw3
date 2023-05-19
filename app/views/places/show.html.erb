@@ -4,7 +4,8 @@
 <ul>
   <% for post in @posts %>
     <li>
-      <%= post["activity"] %>
+      <%= post["title"] %>
+       <%= post["description"] %>
       <%= post["posted_on"] %>
     </li>
   <% end %>
