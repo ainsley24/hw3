@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   resources "posts"
 
   get("/", {:controller => "places",:action => "index" })
-  
+  get("/", {:controller => "posts",:action => "index" })
 end
