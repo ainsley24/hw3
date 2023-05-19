@@ -1,0 +1,15 @@
+<% places = {Place}.all %>
+
+<h1>Places I've Been</h1>
+ 
+<ul>
+  <% for place in places %>
+    <a href="">
+      <%= place["name"] %>
+    </a>
+  <% end %>
+</ul>
+
+<p>
+  <a href="">New Place</a>
+</p>
